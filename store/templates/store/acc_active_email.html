@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Confirmation</title>
+</head>
+<body>
+    <p>Thank you for registering, {{ customer.first_name }}. Please click the link below to confirm your email address:</p>
+    <p><a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}">Confirm Email</a></p>
+</body>
+</html>
